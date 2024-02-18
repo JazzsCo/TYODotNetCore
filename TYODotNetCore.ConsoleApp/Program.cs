@@ -2,11 +2,12 @@
 using System.Data;
 using System.Data.SqlClient;
 using TYODotNetCore.ConsoleApp.AdoDotNetExamples;
+using TYODotNetCore.ConsoleApp.DapperExamples;
 
 //Console.WriteLine("Starting The C# Program!!");
 
 //SqlConnectionStringBuilder  sqlConnectionStringBuilder = new SqlConnectionStringBuilder();
-//sqlConnectionStringBuilder.DataSource = "LAPTOP-GF6QM6AD\\SQLEXPRESS";
+//sqlConnectionStringBuilder.DataSource = "LAPTOP-GF6QM6AD\\SQLEXPRESS"; 
 //sqlConnectionStringBuilder.InitialCatalog = "TestDb";
 //sqlConnectionStringBuilder.UserID = "sa";
 //sqlConnectionStringBuilder.Password = "sasa@123";
@@ -35,9 +36,16 @@ using TYODotNetCore.ConsoleApp.AdoDotNetExamples;
 //Console.ReadKey();
 
 
-AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
-adoDotNetExample.Read();
-adoDotNetExample.Edit(1);
-adoDotNetExample.Create("Thu Yein", "Min Thar", "Saw Kyi Bl");
-adoDotNetExample.Update(9, "Thu Yein Oo", "Developer", "Saw Ma Shi Pr");
-adoDotNetExample.Delete(9);
+//AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+//adoDotNetExample.Read();
+//adoDotNetExample.Edit(1);
+//adoDotNetExample.Create("Thu Yein", "Min Thar", "Saw Kyi Bl");
+//adoDotNetExample.Update(9, "Thu Yein Oo", "Developer", "Saw Ma Shi Pr");
+//adoDotNetExample.Delete(9);
+
+DapperExample dapperExample = new DapperExample();
+dapperExample.Read();
+dapperExample.Edit(1);
+dapperExample.Create("Thu Yein Nay Min", "Min Thar Gyi", "Saw Kyi Bl");
+dapperExample.Update(14, "Thu Yein Nay Min", "Min Thar Gyi", "Single");
+dapperExample.Delete(14);
