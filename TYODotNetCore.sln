@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TYODotNetCore.ConsoleApp", "TYODotNetCore.ConsoleApp\TYODotNetCore.ConsoleApp.csproj", "{88140C07-7DB2-49DA-A073-48444C2FF4A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TYODotNetCore.ConsoleApp", "TYODotNetCore.ConsoleApp\TYODotNetCore.ConsoleApp.csproj", "{88140C07-7DB2-49DA-A073-48444C2FF4A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TYODotNetCore.WebApi", "TYODotNetCore.WebApi\TYODotNetCore.WebApi.csproj", "{1CC82D01-7335-4653-B31B-00711E9EEF3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{88140C07-7DB2-49DA-A073-48444C2FF4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88140C07-7DB2-49DA-A073-48444C2FF4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88140C07-7DB2-49DA-A073-48444C2FF4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC82D01-7335-4653-B31B-00711E9EEF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC82D01-7335-4653-B31B-00711E9EEF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC82D01-7335-4653-B31B-00711E9EEF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC82D01-7335-4653-B31B-00711E9EEF3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
