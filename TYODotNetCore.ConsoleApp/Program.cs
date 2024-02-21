@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using TYODotNetCore.ConsoleApp.AdoDotNetExamples;
 using TYODotNetCore.ConsoleApp.DapperExamples;
 using TYODotNetCore.ConsoleApp.EFCoreExamples;
+using TYODotNetCore.ConsoleApp.HttpClientExamples;
 
 //Console.WriteLine("Starting The C# Program!!");
 
@@ -51,9 +52,12 @@ using TYODotNetCore.ConsoleApp.EFCoreExamples;
 //dapperExample.Update(14, "Thu Yein Nay Min", "Min Thar Gyi", "Single");
 //dapperExample.Delete(14);
 
-EFCoreExample eFCoreExample = new EFCoreExample();
-eFCoreExample.Read();
-eFCoreExample.Edit(1);
-eFCoreExample.Create("Thu Yein Nay Min", "Min Thar Gyi", "Saw Kyi Bl Single");
-eFCoreExample.Update(15, "Thu Yein Nay Min", "Min Thar Gyi", "Single");
-eFCoreExample.Delete(15);
+//EFCoreExample eFCoreExample = new EFCoreExample();
+//eFCoreExample.Read();
+//eFCoreExample.Edit(1);
+//eFCoreExample.Create("Thu Yein Nay Min", "Min Thar Gyi", "Saw Kyi Bl Single");
+//eFCoreExample.Update(15, "Thu Yein Nay Min", "Min Thar Gyi", "Single");
+//eFCoreExample.Delete(15);
+
+HttpClientExample httpClientExample = new HttpClientExample();
+await httpClientExample.Run();
