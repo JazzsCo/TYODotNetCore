@@ -59,5 +59,8 @@ using TYODotNetCore.ConsoleApp.HttpClientExamples;
 //eFCoreExample.Update(15, "Thu Yein Nay Min", "Min Thar Gyi", "Single");
 //eFCoreExample.Delete(15);
 
+Console.WriteLine("Start the real time CRUD testing...");
+Console.ReadKey();  
+
 HttpClientExample httpClientExample = new HttpClientExample();
 await httpClientExample.Run();
