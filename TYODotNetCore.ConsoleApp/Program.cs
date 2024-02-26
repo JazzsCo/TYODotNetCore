@@ -5,6 +5,7 @@ using TYODotNetCore.ConsoleApp.AdoDotNetExamples;
 using TYODotNetCore.ConsoleApp.DapperExamples;
 using TYODotNetCore.ConsoleApp.EFCoreExamples;
 using TYODotNetCore.ConsoleApp.HttpClientExamples;
+using TYODotNetCore.ConsoleApp.RestClientExamples;
 
 //Console.WriteLine("Starting The C# Program!!");
 
@@ -62,5 +63,8 @@ using TYODotNetCore.ConsoleApp.HttpClientExamples;
 Console.WriteLine("Start the real time CRUD testing...");
 Console.ReadKey();  
 
-HttpClientExample httpClientExample = new HttpClientExample();
-await httpClientExample.Run();
+//HttpClientExample httpClientExample = new HttpClientExample();
+//await httpClientExample.Run();
+
+RestClientExample restClientExample = new RestClientExample();
+await restClientExample.Run();
