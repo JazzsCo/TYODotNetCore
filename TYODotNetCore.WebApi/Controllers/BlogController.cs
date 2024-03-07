@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using TYODotNetCore.WebApi.Models;
+using TYODotNetCore.MvcApp.Models;
 
-namespace TYODotNetCore.WebApi.Controllers
+namespace TYODotNetCore.MvcApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -1,0 +1,30 @@
+﻿@model List<BlogModel>
+@{
+    ViewData["Title"] = "Blog Page";
+    int i = 0;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Blog Page</h1>
+    <table class="table mt-2">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Content</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(BlogModel item in Model)
+            {
+                <tr>
+                    <th scope="row">@(++i)</th>
+                    <th scope="row">@item.BlogTitle</th>
+                    <th scope="row">@item.BlogAuthor</th>
+                    <th scope="row">@item.BlogContent</th>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
