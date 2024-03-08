@@ -1,0 +1,22 @@
+﻿@model BlogModel
+@{
+    ViewData["Title"] = "Blog Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Blog ID @Model.BlogId</h1>
+
+        <div class="mb-3">
+            <label class="form-label">Blog Title</label>
+            <input type="text" class="form-control" id="BlogTitle" disabled value="@Model.BlogTitle">
+        </div> <div class="mb-3">
+            <label class="form-label">Blog Author</label>
+            <input type="text" class="form-control" id="BlogAuthor" disabled value="@Model.BlogAuthor">
+        </div> <div class="mb-3">
+            <label class="form-label">Blog Content</label>
+            <input type="text" class="form-control" id="BlogContent" disabled value="@Model.BlogContent">
+        </div>
+        <div>
+        <a href="/Blog" class="btn btn-primary btn-sm">Back</a>
+        </div>
+</div>

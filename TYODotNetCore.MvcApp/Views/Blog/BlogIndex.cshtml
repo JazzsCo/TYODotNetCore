@@ -5,14 +5,18 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome To Blog Page</h1>
-    <table class="table mt-2">
+    <h1 class="display-4">Welcome To Blog Page
+        <a href="/Blog/Create" class="btn btn-info btn-sm">Create</a>
+    </h1>
+    
+    <table class="table">
         <thead>
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Title</th>
                 <th scope="col">Author</th>
-                <th scope="col">Content</th>
+                <th scope="col">Content</th> 
+                <th scope="col">Action</th> 
             </tr>
         </thead>
         <tbody>
@@ -23,6 +27,11 @@
                     <th scope="row">@item.BlogTitle</th>
                     <th scope="row">@item.BlogAuthor</th>
                     <th scope="row">@item.BlogContent</th>
+                    <th>
+                        <a href="/Blog/View/@item.BlogId" class="btn btn-primary btn-sm">View</a>
+                        <a href="/Blog/Update/@item.BlogId" class="btn btn-warning btn-sm">Update</a>
+                        <a href="/Blog/Delete/@item.BlogId" class="btn btn-danger btn-sm">Delete</a>
+                    </th>
                 </tr>
             }
         </tbody>
