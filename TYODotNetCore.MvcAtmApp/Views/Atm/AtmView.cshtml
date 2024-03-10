@@ -1,0 +1,28 @@
+﻿@model AtmModel
+@{
+    ViewData["Title"] = "Atm Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Atm ID @Model.AtmId</h1>
+
+    <div class="mb-3">
+        <label class="form-label">UserName</label>
+        <input type="text" class="form-control" id="UserName" disabled value="@Model.UserName">
+    </div> 
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="text" class="form-control" id="Password" disabled value="@Model.Password">
+    </div> 
+    <div class="mb-3">
+        <label class="form-label">CardNumber</label>
+        <input type="text" class="form-control" id="CardNumber" disabled value="@Model.CardNumber">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Balance</label>
+        <input type="text" class="form-control" id="Balance" disabled value="@Model.Balance">
+    </div>
+    <div>
+        <a href="/Atm" class="btn btn-primary btn-sm">Back</a>
+    </div>
+</div>

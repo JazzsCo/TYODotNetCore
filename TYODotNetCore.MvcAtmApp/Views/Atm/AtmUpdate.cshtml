@@ -1,0 +1,31 @@
+﻿@model AtmModel
+@{
+    ViewData["Title"] = "Atm Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Update Atm</h1>
+
+
+    <form action="/Atm/Update/@Model.AtmId" method="post">
+        <div class="mb-3">
+            <label class="form-label">UserName</label>
+            <input type="text" class="form-control" id="UserName" name="UserName" value="@Model.UserName">
+        </div> <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="text" class="form-control" id="Password" name="Password" value="@Model.Password">
+        </div> <div class="mb-3">
+            <label class="form-label">CardNumber</label>
+            <input type="text" class="form-control" id="CardNumber" name="CardNumber" value="@Model.CardNumber">
+        </div> <div class="mb-3">
+            <label class="form-label">Balance</label>
+            <input type="text" class="form-control" id="Balance" name="Balance" value="@Model.Balance">
+        </div>
+        <div>
+            <a href="/Atm" class="btn btn-primary btn-sm">Back</a>
+            <button type="submit" class="btn btn-info btn-sm">
+                Update
+            </button>
+        </div>
+    </form>
+</div>

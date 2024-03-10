@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TYODotNetCore.ConsoleApp", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TYODotNetCore.WebApi", "TYODotNetCore.WebApi\TYODotNetCore.WebApi.csproj", "{1CC82D01-7335-4653-B31B-00711E9EEF3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TYODotNetCore.MvcApp", "TYODotNetCore.MvcApp\TYODotNetCore.MvcApp.csproj", "{360671F7-A887-42A2-B5A2-4FCF5202ED5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TYODotNetCore.MvcApp", "TYODotNetCore.MvcApp\TYODotNetCore.MvcApp.csproj", "{360671F7-A887-42A2-B5A2-4FCF5202ED5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TYODotNetCore.MvcAtmApp", "TYODotNetCore.MvcAtmApp\TYODotNetCore.MvcAtmApp.csproj", "{5953E31A-D1B6-4E88-8767-21226B7C03A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{360671F7-A887-42A2-B5A2-4FCF5202ED5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{360671F7-A887-42A2-B5A2-4FCF5202ED5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{360671F7-A887-42A2-B5A2-4FCF5202ED5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5953E31A-D1B6-4E88-8767-21226B7C03A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5953E31A-D1B6-4E88-8767-21226B7C03A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5953E31A-D1B6-4E88-8767-21226B7C03A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5953E31A-D1B6-4E88-8767-21226B7C03A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

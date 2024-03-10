@@ -27,7 +27,7 @@ namespace TYODotNetCore.MvcApp.Controllers
             return View("BlogView", item);
         }
 
-        [ActionName("Create")]
+        [ActionName("Create")] 
         public IActionResult BlogCreate()
         {
             return View("BlogCreate");

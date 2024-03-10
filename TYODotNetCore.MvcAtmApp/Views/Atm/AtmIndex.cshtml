@@ -1,0 +1,42 @@
+﻿@model List<AtmModel>
+@{
+    ViewData["Title"] = "Atm Page";
+    int i = 0;
+}
+
+<div class="text-center">
+    <h1 class="display-4">
+        Welcome To Atm Page
+        <a href="/Atm/Create" class="btn btn-info btn-sm">Create</a>
+    </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">AtmId</th>
+                <th scope="col">UserName</th>
+                <th scope="col">Password</th>
+                <th scope="col">CardNumber</th>
+                <th scope="col">Balance</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (AtmModel item in Model)
+            {
+                <tr>
+                    <th scope="row">@(++i)</th>
+                    <th scope="row">@item.UserName</th>
+                    <th scope="row">@item.Password</th>
+                    <th scope="row">@item.CardNumber</th>
+                    <th scope="row">@item.Balance</th>
+                    <th>
+                        <a href="/Atm/View/@item.AtmId" class="btn btn-primary btn-sm">View</a>
+                        <a href="/Atm/Update/@item.AtmId" class="btn btn-warning btn-sm">Update</a>
+                        <a href="/Atm/Delete/@item.AtmId" class="btn btn-danger btn-sm">Delete</a>
+                    </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
