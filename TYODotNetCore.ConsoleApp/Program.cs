@@ -5,6 +5,7 @@ using TYODotNetCore.ConsoleApp.AdoDotNetExamples;
 using TYODotNetCore.ConsoleApp.DapperExamples;
 using TYODotNetCore.ConsoleApp.EFCoreExamples;
 using TYODotNetCore.ConsoleApp.HttpClientExamples;
+using TYODotNetCore.ConsoleApp.RefitExamples;
 using TYODotNetCore.ConsoleApp.RestClientExamples;
 
 //Console.WriteLine("Starting The C# Program!!");
@@ -66,5 +67,8 @@ Console.ReadKey();
 //HttpClientExample httpClientExample = new HttpClientExample();
 //await httpClientExample.Run();
 
-RestClientExample restClientExample = new RestClientExample();
-await restClientExample.Run();
+//RestClientExample restClientExample = new RestClientExample();
+//await restClientExample.Run();
+
+RefitExample refitExample = new RefitExample();
+await refitExample.Run();
