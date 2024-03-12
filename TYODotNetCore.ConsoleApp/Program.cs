@@ -62,13 +62,13 @@ using TYODotNetCore.ConsoleApp.RestClientExamples;
 //eFCoreExample.Delete(15);
 
 Console.WriteLine("Start the real time CRUD testing...");
-Console.ReadKey();  
+Console.ReadKey();
 
 //HttpClientExample httpClientExample = new HttpClientExample();
 //await httpClientExample.Run();
 
-//RestClientExample restClientExample = new RestClientExample();
-//await restClientExample.Run();
+RestClientExample restClientExample = new RestClientExample();
+await restClientExample.Run();
 
-RefitExample refitExample = new RefitExample();
-await refitExample.Run();
+//RefitExample refitExample = new RefitExample();
+//await refitExample.Run();

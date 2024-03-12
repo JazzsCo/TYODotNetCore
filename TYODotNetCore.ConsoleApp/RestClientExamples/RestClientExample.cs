@@ -14,10 +14,11 @@ namespace TYODotNetCore.ConsoleApp.RestClientExamples
     {
         public async Task Run()
         {
-            await Delete(20);
+            await BirdRead();
         }
 
-        private readonly string _apiUrl = "http://localhost:5112/api/Blog";
+        //private readonly string _apiUrl = "http://localhost:5112/api/Blog";
+        private readonly string _apiUrl = "http://localhost:5233/api/Bird";
 
         private async Task Read()
         {
@@ -39,6 +40,23 @@ namespace TYODotNetCore.ConsoleApp.RestClientExamples
                     Console.WriteLine(item.BlogAuthor);
                     Console.WriteLine(item.BlogContent);
                 }
+            }
+        }
+
+        private async Task BirdRead()
+        {
+            RestClient client = new RestClient();
+            RestRequest restRequest = new RestRequest(_apiUrl, Method.Get);
+
+            RestResponse res = await client.ExecuteAsync(restRequest);
+
+            if (res.IsSuccessStatusCode)
+            {
+                string dataStr = res.Content!;
+
+                List<BirdModel> lst = JsonConvert.DeserializeObject<List<BirdModel>>(dataStr)!;
+
+                Console.WriteLine(lst.Count);
             }
         }
 
