@@ -67,8 +67,8 @@ Console.ReadKey();
 //HttpClientExample httpClientExample = new HttpClientExample();
 //await httpClientExample.Run();
 
-RestClientExample restClientExample = new RestClientExample();
-await restClientExample.Run();
+//RestClientExample restClientExample = new RestClientExample();
+//await restClientExample.Run();
 
-//RefitExample refitExample = new RefitExample();
-//await refitExample.Run();
+RefitExample refitExample = new RefitExample();
+await refitExample.Run();

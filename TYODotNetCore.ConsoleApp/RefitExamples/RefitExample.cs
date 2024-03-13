@@ -14,14 +14,14 @@ namespace TYODotNetCore.ConsoleApp.RefitExamples
         public async Task Run()
         {
             //await Read();
-            //await Edit(0);
+            //await Edit(3);
             //await Create("Hello Loser", "Hello Author", "Hello Content");
-            //await Update(4, "Hello Loser", "Hello Author", "Hello Content");
-            await Delete(4);
+            //await Update(3, "Hello Loser", "Hello Author", "Hello Contentm");
+            await Delete(3);
         }
 
-        private readonly IBlogApi refitApi = RestService.For<IBlogApi>("http://localhost:5112"); 
-
+        private readonly IBlogApi refitApi = RestService.For<IBlogApi>("http://localhost:5050"); 
+        
         private async Task Read()
         {
             List<BlogModel> lst = await refitApi.GetBlogs();

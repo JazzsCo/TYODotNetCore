@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TYODotNetCore.MvcApp", "TYO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TYODotNetCore.MvcAtmApp", "TYODotNetCore.MvcAtmApp\TYODotNetCore.MvcAtmApp.csproj", "{5953E31A-D1B6-4E88-8767-21226B7C03A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TYODotNetCore.BirdWebApi", "TYODotNetCore.BirdWebApi\TYODotNetCore.BirdWebApi.csproj", "{114AE1A2-912D-4625-B54A-98B3D26A7DC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TYODotNetCore.BirdWebApi", "TYODotNetCore.BirdWebApi\TYODotNetCore.BirdWebApi.csproj", "{114AE1A2-912D-4625-B54A-98B3D26A7DC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TYODotNetCore.HWDapperWebApi", "TYODotNetCore.HWDapperWebApi\TYODotNetCore.HWDapperWebApi.csproj", "{01AE39BC-52DE-4B9E-91B0-F1FBE849A95E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{114AE1A2-912D-4625-B54A-98B3D26A7DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{114AE1A2-912D-4625-B54A-98B3D26A7DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{114AE1A2-912D-4625-B54A-98B3D26A7DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01AE39BC-52DE-4B9E-91B0-F1FBE849A95E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01AE39BC-52DE-4B9E-91B0-F1FBE849A95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01AE39BC-52DE-4B9E-91B0-F1FBE849A95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01AE39BC-52DE-4B9E-91B0-F1FBE849A95E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
